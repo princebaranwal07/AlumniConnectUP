@@ -38,7 +38,7 @@ const StudentDashboard = () => {
   };
   useEffect(() => {
     fetchData();
-  }, []);
+  }, [fetchData]);
 
   const fetchRecommendations = async () => {
     setRecsLoading(true);
