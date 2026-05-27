@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../components/ui/card';
@@ -19,7 +19,7 @@ const StudentDashboard = () => {
 
   
 
-  const fetchData = async () => {
+  const fetchData = useCallback(async () => {
     try {
       const [profileRes, mentorsRes] = await Promise.all([
         api.getStudentProfile(user.id).catch(() => null),
@@ -35,7 +35,7 @@ const StudentDashboard = () => {
     } finally {
       setLoading(false);
     }
-  };
+  }[]);
   useEffect(() => {
     fetchData();
   }, [fetchData]);
