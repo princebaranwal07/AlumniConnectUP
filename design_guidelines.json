@@ -1,0 +1,167 @@
+{
+  "identity": {
+    "name": "E1",
+    "mission": "Create a vibrant, student-friendly mentorship platform that bridges the gap between alumni and students with electric optimism.",
+    "archetype": "Electric Optimism (Pastel & Soft + Electric & Neon)",
+    "principles": [
+      "Fusion over Imitation",
+      "Emotion First",
+      "Content is King",
+      "Zoom In",
+      "Negative Space",
+      "Contrast"
+    ]
+  },
+  "typography": {
+    "headings": {
+      "font_family": "Outfit, sans-serif",
+      "weights": ["500", "700", "900"],
+      "usage": "Use for all section headers, hero titles, and card titles. Tight tracking (-0.02em).",
+      "cdn_link": "https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700;900&display=swap"
+    },
+    "body": {
+      "font_family": "DM Sans, sans-serif",
+      "weights": ["400", "500", "700"],
+      "usage": "Use for all paragraph text, inputs, and UI elements. Relaxed leading.",
+      "cdn_link": "https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;500;700&display=swap"
+    },
+    "mono": {
+      "font_family": "JetBrains Mono, monospace",
+      "usage": "Use for code snippets, API keys, or technical data displays."
+    }
+  },
+  "colors": {
+    "palette": {
+      "primary": {
+        "DEFAULT": "hsl(250, 95%, 60%)",
+        "foreground": "hsl(0, 0%, 100%)",
+        "description": "Vibrant Electric Purple. Use for primary buttons, active states, and key brand elements."
+      },
+      "secondary": {
+        "DEFAULT": "hsl(250, 30%, 96%)",
+        "foreground": "hsl(250, 95%, 60%)",
+        "description": "Pale Lavender. Use for secondary buttons, backgrounds of active items, and subtle highlights."
+      },
+      "accent": {
+        "DEFAULT": "hsl(15, 90%, 60%)",
+        "foreground": "hsl(0, 0%, 100%)",
+        "description": "Vibrant Coral/Orange. Use for CTAs that need to pop against the purple."
+      },
+      "background": "hsl(0, 0%, 100%)",
+      "foreground": "hsl(222, 47%, 11%)",
+      "muted": "hsl(210, 40%, 96.1%)",
+      "muted_foreground": "hsl(215.4, 16.3%, 46.9%)",
+      "card": "hsl(0, 0%, 100%)",
+      "card_foreground": "hsl(222, 47%, 11%)",
+      "border": "hsl(214.3, 31.8%, 91.4%)",
+      "input": "hsl(214.3, 31.8%, 91.4%)"
+    },
+    "gradients": {
+      "hero": "bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500",
+      "subtle": "bg-gradient-to-b from-white to-indigo-50/50"
+    }
+  },
+  "visual_enhancers": {
+    "radius": "0.75rem",
+    "shadows": {
+      "soft": "0 4px 20px -2px rgba(79, 70, 229, 0.1)",
+      "card": "0 0 0 1px rgba(0,0,0,0.05), 0 2px 8px rgba(0,0,0,0.05)",
+      "hover": "0 0 0 1px rgba(79, 70, 229, 0.2), 0 8px 30px rgba(79, 70, 229, 0.15)"
+    },
+    "glassmorphism": {
+      "default": "bg-white/70 backdrop-blur-xl border border-white/20 shadow-sm",
+      "dark": "bg-black/60 backdrop-blur-xl border border-white/10 shadow-sm"
+    },
+    "textures": "Use subtle noise overlays on solid color backgrounds to add depth."
+  },
+  "layout_strategies": {
+    "marketing": {
+      "grid": "Tetris Grid (Mode A)",
+      "spacing": "Generous (p-8 to p-24)",
+      "alignment": "Asymmetrical",
+      "hero_style": "Split screen with 3D element or 'Tetris' grid of images."
+    },
+    "dashboard": {
+      "grid": "Control Room Grid (Mode B)",
+      "spacing": "Compact (p-4 to p-8)",
+      "alignment": "Strict Grid",
+      "structure": "Sidebar Navigation + Top Header + Main Content Area"
+    }
+  },
+  "components": {
+    "buttons": {
+      "primary": "rounded-full px-8 py-6 font-bold shadow-lg hover:shadow-xl transition-all hover:-translate-y-0.5",
+      "secondary": "rounded-full px-8 py-6 font-medium bg-secondary text-secondary-foreground hover:bg-secondary/80"
+    },
+    "cards": {
+      "default": "bg-card text-card-foreground rounded-xl border shadow-card hover:shadow-hover transition-all duration-300",
+      "interactive": "cursor-pointer hover:border-primary/50 hover:ring-2 hover:ring-primary/10"
+    },
+    "inputs": {
+      "default": "h-12 rounded-lg border-input bg-transparent px-3 py-1 text-sm shadow-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary disabled:cursor-not-allowed disabled:opacity-50"
+    }
+  },
+  "image_urls": {
+    "students": [
+      {
+        "url": "https://images.unsplash.com/photo-1758270705172-07b53627dfcb?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzh8MHwxfHNlYXJjaHwxfHxkaXZlcnNlJTIwY29sbGVnZSUyMHN0dWRlbnRzJTIwc3R1ZHlpbmclMjBjb2xsYWJvcmF0aW9ufGVufDB8fHx8MTc2NjE1MTY0OHww&ixlib=rb-4.1.0&q=85",
+        "description": "Group of students collaborating with laptop",
+        "category": "hero_student"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1758270705317-3ef6142d306f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzh8MHwxfHNlYXJjaHwyfHxkaXZlcnNlJTIwY29sbGVnZSUyMHN0dWRlbnRzJTIwc3R1ZHlpbmclMjBjb2xsYWJvcmF0aW9ufGVufDB8fHx8MTc2NjE1MTY0OHww&ixlib=rb-4.1.0&q=85",
+        "description": "Multiracial team working together",
+        "category": "community_section"
+      }
+    ],
+    "mentors": [
+      {
+        "url": "https://images.unsplash.com/photo-1565688527174-775059ac429c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDN8MHwxfHNlYXJjaHwyfHxwcm9mZXNzaW9uYWwlMjBtZW50b3IlMjBhbHVtbmklMjBvZmZpY2UlMjBmcmllbmRseXxlbnwwfHx8fDE3NjYxNTE2NTB8MA&ixlib=rb-4.1.0&q=85",
+        "description": "Mentor interaction at table",
+        "category": "hero_mentor"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1565688420536-11a4ddfa246f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDN8MHwxfHNlYXJjaHw0fHxwcm9mZXNzaW9uYWwlMjBtZW50b3IlMjBhbHVtbmklMjBvZmZpY2UlMjBmcmllbmRseXxlbnwwfHx8fDE3NjYxNTE2NTB8MA&ixlib=rb-4.1.0&q=85",
+        "description": "Close up mentorship discussion",
+        "category": "mentorship_page"
+      }
+    ],
+    "campus": [
+      {
+        "url": "https://images.unsplash.com/photo-1652974731232-efc86a9bd985?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzd8MHwxfHNlYXJjaHwxfHx1bml2ZXJzaXR5JTIwY2FtcHVzJTIwbW9kZXJuJTIwYXJjaGl0ZWN0dXJlJTIwYnJpZ2h0fGVufDB8fHx8MTc2NjE1MTY1MXww&ixlib=rb-4.1.0&q=85",
+        "description": "Modern university building",
+        "category": "landing_background"
+      }
+    ]
+  },
+  "instructions_to_main_agent": {
+    "general": [
+      "Use the 'Electric Optimism' theme: Light mode with vibrant purple/indigo primary and coral accents.",
+      "Implement the 'Tetris Grid' for marketing pages and 'Control Room Grid' for dashboards.",
+      "Use 'Outfit' for headings and 'DM Sans' for body text. Import them via Google Fonts.",
+      "Ensure all interactive elements have hover states and transitions.",
+      "Use 'sonner' for toasts and 'lucide-react' for icons.",
+      "Do not use gradients for text, only for backgrounds or accents.",
+      "Add 'data-testid' to all interactive elements."
+    ],
+    "dashboard_specific": [
+      "Use a sidebar layout for the dashboard.",
+      "Use cards with 'shadow-card' and 'rounded-xl' for widgets.",
+      "Ensure high contrast for data visualization.",
+      "Use 'recharts' for any charts or graphs."
+    ],
+    "marketing_specific": [
+      "Use large, bold typography for hero sections.",
+      "Use the provided images in a 'bento' or 'tetris' layout.",
+      "Add subtle scroll animations using 'framer-motion'."
+    ]
+  },
+  "universal_guidelines": [
+    "Avoid generic 'AI slop' designs. Be bold with spacing and typography.",
+    "Do not use 'Inter' for headings.",
+    "Do not use full-screen gradients.",
+    "Ensure accessibility (contrast ratios).",
+    "Use 'lucide-react' for icons.",
+    "Use 'sonner' for notifications."
+  ]
+}

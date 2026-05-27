@@ -1,0 +1,56 @@
+.App {
+  min-height: 100vh;
+}
+
+.hero-gradient {
+  background: linear-gradient(135deg, hsl(250, 95%, 60%) 0%, hsl(280, 95%, 65%) 50%, hsl(340, 95%, 70%) 100%);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.shadow-soft {
+  box-shadow: 0 4px 20px -2px rgba(79, 70, 229, 0.1);
+}
+
+.shadow-card {
+  box-shadow: 0 0 0 1px rgba(0,0,0,0.05), 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.shadow-hover {
+  box-shadow: 0 0 0 1px rgba(79, 70, 229, 0.2), 0 8px 30px rgba(79, 70, 229, 0.15);
+}
+
+.btn-primary {
+  @apply rounded-full px-8 py-4 font-bold shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-0.5;
+}
+
+.btn-secondary {
+  @apply rounded-full px-8 py-4 font-medium bg-secondary text-secondary-foreground hover:bg-secondary/80 transition-all duration-300;
+}
+
+.card-interactive {
+  @apply cursor-pointer hover:border-primary/50 hover:ring-2 hover:ring-primary/10 transition-all duration-300;
+}
+
+.fade-in {
+  animation: fadeIn 0.6s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.scroll-smooth {
+  scroll-behavior: smooth;
+}
