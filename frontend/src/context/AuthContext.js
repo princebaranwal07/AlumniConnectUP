@@ -10,13 +10,7 @@ export const AuthProvider = ({ children }) => {
   const [token, setToken] = useState(localStorage.getItem('token'));
   const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    if (token) {
-      fetchUser();
-    } else {
-      setLoading(false);
-    }
-  }, [token, fetchUser]);
+ 
 
   const fetchUser = useCallback(async () => {
     try {
@@ -31,6 +25,13 @@ export const AuthProvider = ({ children }) => {
       setLoading(false);
     }
   }, []);
+     useEffect(() => {
+    if (token) {
+      fetchUser();
+    } else {
+      setLoading(false);
+    }
+  }, [token, fetchUser]);
 
   const login = async (email, password) => {
     const response = await axios.post(`${API}/auth/login`, { email, password });
