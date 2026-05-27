@@ -40,7 +40,7 @@ const AlumniDashboard = () => {
   };
     useEffect(() => {
     fetchData();
-  }, []);
+  }, [fetchData]);
   const handleAccept = async (requestId) => {
     try {
       await api.acceptRequest(requestId);
